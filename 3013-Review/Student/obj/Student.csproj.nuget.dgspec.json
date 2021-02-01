@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acke9387\\source\\repos\\3013-Review\\Student\\Student.csproj": {}
+    "C:\\Users\\acke9387\\source\\repos\\Acke9387\\MIS-3033-950-202020\\3013-Review\\Student\\Student.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acke9387\\source\\repos\\3013-Review\\Student\\Student.csproj": {
+    "C:\\Users\\acke9387\\source\\repos\\Acke9387\\MIS-3033-950-202020\\3013-Review\\Student\\Student.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acke9387\\source\\repos\\3013-Review\\Student\\Student.csproj",
+        "projectUniqueName": "C:\\Users\\acke9387\\source\\repos\\Acke9387\\MIS-3033-950-202020\\3013-Review\\Student\\Student.csproj",
         "projectName": "Student",
-        "projectPath": "C:\\Users\\acke9387\\source\\repos\\3013-Review\\Student\\Student.csproj",
+        "projectPath": "C:\\Users\\acke9387\\source\\repos\\Acke9387\\MIS-3033-950-202020\\3013-Review\\Student\\Student.csproj",
         "packagesPath": "C:\\Users\\acke9387\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acke9387\\source\\repos\\3013-Review\\Student\\obj\\",
+        "outputPath": "C:\\Users\\acke9387\\source\\repos\\Acke9387\\MIS-3033-950-202020\\3013-Review\\Student\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
