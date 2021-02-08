@@ -25,6 +25,7 @@ namespace WPF_FirstApplication
             InitializeComponent();
 
             lblMessage.Content = string.Empty;
+            btnPizza.Background = Brushes.Gray;
         }
 
         private void btnPizza_Click(object sender, RoutedEventArgs e)
@@ -38,5 +39,21 @@ namespace WPF_FirstApplication
         {
             Environment.Exit(0);
         }
+
+        private void btnPizza_MouseEnter(object sender, MouseEventArgs e)
+        {
+            wndMain.Background = Brushes.Brown;
+        }
+
+        private void btnPizza_MouseLeave(object sender, MouseEventArgs e)
+        {
+            wndMain.Background = Brushes.Gray;
+        }
+
+        private void btnPizza_IsMouseDirectlyOverChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            btnPizza.Background = Brushes.Brown;
+        }
+
     }
 }

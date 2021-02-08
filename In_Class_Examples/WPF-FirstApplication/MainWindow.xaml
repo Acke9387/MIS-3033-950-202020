@@ -1,4 +1,4 @@
-﻿<Window x:Class="WPF_FirstApplication.MainWindow"
+﻿<Window x:Name="wndMain" x:Class="WPF_FirstApplication.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -10,7 +10,7 @@
         <ImageBrush ImageSource="https://doglime.com/wp-content/uploads/2019/07/Sheepadoodle-Old-English-Sheepdog-and-Poodle-mix.jpg" Stretch="UniformToFill" TileMode="None"/>
     </Window.Background>
     <Grid>
-        <Button x:Name="btnPizza" Content="Click Me, please!" Margin="316,322,316,69" Click="btnPizza_Click" IsDefault="True" />
+        <Button x:Name="btnPizza" Content="Click Me, please!" Margin="316,322,316,69" Click="btnPizza_Click" IsDefault="True" MouseEnter="btnPizza_MouseEnter" MouseLeave="btnPizza_MouseLeave" IsMouseDirectlyOverChanged="btnPizza_IsMouseDirectlyOverChanged" />
         <Label x:Name="lblTitle" Content="My First WPF Application!!!!" HorizontalAlignment="Left" Margin="98,37,0,0" VerticalAlignment="Top" Height="67" Width="630" FontSize="48" FontWeight="Normal" FontStyle="Normal" Foreground="#FFFB0606"/>
         <Label x:Name="lblMessage" Content="Label" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" FontSize="20" Width="780" Foreground="#FFD6674E"/>
         <TextBox x:Name="txtInput" HorizontalAlignment="Left" Margin="200,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Height="65"/>
