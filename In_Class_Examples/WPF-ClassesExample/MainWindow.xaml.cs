@@ -51,5 +51,16 @@ namespace WPF_ClassesExample
             //lstPets.Items.Add(name); DONT DO THIS
 
         }
+
+        private void lstPets_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            Pet selectedPet = (Pet)lstPets.SelectedItem;
+
+            Uri locationOfImage = new Uri(selectedPet.PicURL);
+            BitmapImage picFromInternet = new BitmapImage(locationOfImage);
+
+            picPet.Source = picFromInternet;
+        }
     }
 }
