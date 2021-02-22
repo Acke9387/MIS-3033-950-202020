@@ -10,8 +10,7 @@
         <ImageBrush ImageSource="https://static.highsnobiety.com/thumbor/n7f-kr_OcADzwwm39iwYKHWsJiU=/1200x720/static.highsnobiety.com/wp-content/uploads/2019/07/11141629/enter-rick-morty-contest-02.jpg"/>
     </Window.Background>
     <Grid>
-        <ListBox x:Name="lstCharacters" Margin="0,194,369,0" Background="#54FFFFFF"/>
-        <Image x:Name="imgPicture" HorizontalAlignment="Left" Height="239" Margin="468,194,0,0" VerticalAlignment="Top" Width="330"/>
+        <ListBox x:Name="lstCharacters" Margin="0,194,0,0" Background="#54FFFFFF" SelectionChanged="lstCharacters_SelectionChanged"/>
 
     </Grid>
 </Window>
