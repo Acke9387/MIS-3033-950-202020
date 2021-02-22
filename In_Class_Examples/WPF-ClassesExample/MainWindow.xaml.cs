@@ -30,9 +30,21 @@ namespace WPF_ClassesExample
             string name, breed, url;
 
             name = txtName.Text;
-            if (string.IsNullOrEmpty(name))
+            bool allGoodToGo = true;
+            if (string.IsNullOrWhiteSpace(name))
             {
                 MessageBox.Show("You must enter a name!");
+                allGoodToGo = false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtBreed.Text))
+            {
+                MessageBox.Show("You must enter a breed!");
+                allGoodToGo = false;
+            }
+
+            if (allGoodToGo == false)
+            {
                 return;
             }
 
