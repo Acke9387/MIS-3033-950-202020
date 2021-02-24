@@ -27,18 +27,20 @@ namespace P_Pokemon
             InitializeComponent();
 
             string url = "https://pokeapi.co/api/v2/pokemon/?limit=1200";
-            AllPokemonAPI api;
+            AllPokemonAPI api = new AllPokemonAPI(); ;
 
             using (var client = new HttpClient())
             {
                 string json = client.GetStringAsync(url).Result;
 
-                var result = client.GetAsync(url).Result;
-                if (result.IsSuccessStatusCode == true)
-                {
-                    api = JsonConvert.DeserializeObject<AllPokemonAPI>(json);
+                // Use if you need to validate that it was successful
 
-                }
+                //var result = client.GetAsync(url).Result;
+                //if (result.IsSuccessStatusCode == true)
+                //{
+                //    api = JsonConvert.DeserializeObject<AllPokemonAPI>(json);
+
+                //}
 
             }
 
