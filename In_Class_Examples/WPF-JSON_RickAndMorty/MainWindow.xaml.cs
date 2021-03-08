@@ -32,20 +32,23 @@ namespace WPF_JSON_RickAndMorty
                 //https://rickandmortyapi.com/api/character
                 string url = "https://rickandmortyapi.com/api/character";
 
-                while (string.IsNullOrEmpty(url) == false)
+                while (string.IsNullOrWhiteSpace(url) == false)
                 {
+                    var result = client.GetAsync(url).Result;
 
-                    var json = client.GetStringAsync(url).Result;
-
-                    RickAndMortyAPI api = JsonConvert.DeserializeObject<RickAndMortyAPI>(json);
-
-                    foreach (var character in api.results)
+                    if (result.IsSuccessStatusCode)
                     {
-                        lstCharacters.Items.Add(character);
-                    }
-                    url = api.info.next;
-                }
+                        string json = "";
+                        RickAndMortyAPI api = JsonConvert.DeserializeObject<RickAndMortyAPI>(json);
 
+                        foreach (var character in api.results)
+                        {
+                            lstCharacters.Items.Add(character);
+                        }
+
+                        url = api.info.next;
+                    }
+                }
             }
 
         }
