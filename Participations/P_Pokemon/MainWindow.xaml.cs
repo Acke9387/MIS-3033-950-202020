@@ -27,7 +27,7 @@ namespace P_Pokemon
             InitializeComponent();
 
             string url = "https://pokeapi.co/api/v2/pokemon/?limit=1200";
-            AllPokemonAPI api = new AllPokemonAPI(); ;
+            AllPokemonAPI api;// = new AllPokemonAPI(); ;
 
             using (var client = new HttpClient())
             {
@@ -35,20 +35,37 @@ namespace P_Pokemon
 
                 // Use if you need to validate that it was successful
 
-                //var result = client.GetAsync(url).Result;
-                //if (result.IsSuccessStatusCode == true)
-                //{
-                //    api = JsonConvert.DeserializeObject<AllPokemonAPI>(json);
+                var result = client.GetStringAsync(url).Result;
 
-                //}
+                api = JsonConvert.DeserializeObject<AllPokemonAPI>(result);
 
             }
 
 
-            foreach (var result in api.results.OrderBy(x => x.name).ToList())
+            foreach (ResultObject result in api.results.OrderBy(x => x.name).ToList())
             {
                 lstPokemon.Items.Add(result);
             }
+
+        }
+
+        private void lstPokemon_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            ResultObject selectedPokemon = (ResultObject)lstPokemon.SelectedItem;
+
+            PokemonInfoAPI pokeInfo;
+
+            using (var client = new HttpClient())
+            {
+                string json = client.GetStringAsync(selectedPokemon.url).Result;
+
+                pokeInfo = JsonConvert.DeserializeObject<PokemonInfoAPI>(json);
+            }
+
+            PokemonInfoWindow wnd = new PokemonInfoWindow();
+            wnd.PopulateForm(pokeInfo);
+            wnd.ShowDialog();
+
 
         }
     }
