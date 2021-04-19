@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-ClassesExample", "WPF-C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-JSON_RickAndMorty", "WPF-JSON_RickAndMorty\WPF-JSON_RickAndMorty.csproj", "{AE9B2509-679A-4473-89C5-2029E5AA1DD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Intro", "MVC_Intro\MVC_Intro.csproj", "{B8EA3132-A677-4147-B60A-923083837876}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC_Intro", "MVC_Intro\MVC_Intro.csproj", "{B8EA3132-A677-4147-B60A-923083837876}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_EF_Intro", "MVC_EF_Intro\MVC_EF_Intro.csproj", "{602297D2-A848-4002-ACF3-50CEA3EB6A34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B8EA3132-A677-4147-B60A-923083837876}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8EA3132-A677-4147-B60A-923083837876}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8EA3132-A677-4147-B60A-923083837876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{602297D2-A848-4002-ACF3-50CEA3EB6A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602297D2-A848-4002-ACF3-50CEA3EB6A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602297D2-A848-4002-ACF3-50CEA3EB6A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602297D2-A848-4002-ACF3-50CEA3EB6A34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
