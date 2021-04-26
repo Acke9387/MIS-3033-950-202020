@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MVC_EF.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Students</h2>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <a href="~/Students/Details/@item.StudentID">
+                <div class="card student" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.FirstName @item.LastName (@item.StudentID)</h5>
+                        <p class="card-text">Favorite Color : @item.FavoriteColor</p>
+                        @*@Html.ActionLink("Details", "Details", new { id = item.StudentID })*@
+                    </div>
+                </div>
+            </a>
+
+            @*
+                @Html.ActionLink("Edit", "Edit", new { id=item.StudentID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.StudentID })
+            *@
+        }
+    </div>
+</div>
+

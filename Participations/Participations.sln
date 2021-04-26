@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P_FirstWPFApplication", "P_FirstWPFApplication\P_FirstWPFApplication.csproj", "{C0E23EF8-E11C-43EB-87A6-2590B4202D7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P_Pokemon", "P_Pokemon\P_Pokemon.csproj", "{BF5DCB14-646E-4905-A61E-1BA9A8BFB605}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P_Pokemon", "P_Pokemon\P_Pokemon.csproj", "{BF5DCB14-646E-4905-A61E-1BA9A8BFB605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_EF", "MVC_EF\MVC_EF.csproj", "{C92BDCF3-91D0-4B8B-BCE1-95EE18C15F36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BF5DCB14-646E-4905-A61E-1BA9A8BFB605}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF5DCB14-646E-4905-A61E-1BA9A8BFB605}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF5DCB14-646E-4905-A61E-1BA9A8BFB605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92BDCF3-91D0-4B8B-BCE1-95EE18C15F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92BDCF3-91D0-4B8B-BCE1-95EE18C15F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92BDCF3-91D0-4B8B-BCE1-95EE18C15F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92BDCF3-91D0-4B8B-BCE1-95EE18C15F36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
